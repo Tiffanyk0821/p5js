@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+
+    <script>
+        function setup() {
+            createCanvas(800, 600);
+            background(0);
+
+        }
+
+        function draw() {
+
+            fill(226, 36, 36);
+            ellipse(500, 300, 200, 200);
+
+        }
+
+        function mouseMoved() {
+            var circle1 = random(200);
+            fill(0,100,255)
+            ellipse(random(800), random(600), circle1, circle1);
+        }
+
+        function mouseDragged() {
+            fill(167, 154, 249);
+            ellipse(mouseX, mouseY, 50, 50);
+            rect(mouseX,mouseY, 50, 50);
+             stroke(0,255,50);
+          
+            line(mouseX,mouseY,500,290);
+            line(mouseX, mouseY, 800, 0);
+            line(mouseX, mouseY, 0, 600);
+           line(mouseX, mouseY, 800, 600);
+            
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html
