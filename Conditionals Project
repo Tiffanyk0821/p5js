@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+
+    <script>
+        function setup() {
+            createCanvas(500, 500);
+            var diameter
+
+        }
+
+        function draw() {
+            diameter = 30
+            // background (249, 224, 224)
+            fill(255, 109, 109)
+            rect(50, 100, 30, 30); // square #1
+
+            fill(109, 255, 187)
+            rect(50, 200, 30, 30); // square #2
+
+            fill(109, 184, 255)
+            rect(50, 300, 30, 30); // square#3
+        }
+
+
+
+
+
+        function mouseDragged() {
+            if (mouseX >= 100) {
+                fill(255, 109, 109) // color of circle  mouseX
+                ellipse(mouseX, mouseY, diameter, diameter) // size of circle
+                // else  (mouseX <= 200)
+                ellipse(mouseX, mouseY, diameter, diameter) // size of circle
+                else if (mouseX <= 210)
+                    ellipse(mouseX, mouseY, diameter, diameter) // size of circle
+            }
+
+            function mousePressed() {
+                stroke(random(255), 255, random(255))
+                line(mouseX, mouseY, 0, 0)
+                stroke(0, 255, 50)
+            }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
